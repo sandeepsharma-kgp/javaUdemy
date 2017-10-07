@@ -10,8 +10,8 @@ public class Main {
                 1, 20, "long silky");
 
         dog.eat();
-//        dog.walk();
-        dog.run();
+        dog.walk();
+//        dog.run();
 
 
     }
