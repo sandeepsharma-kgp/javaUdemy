@@ -3,26 +3,26 @@ package com.javaUdemy;
 public class EnhancedPlayer {
 
     private String name;
-    private int health = 100;
+    private int hitpoints = 100;
     private String weapon;
 
     public EnhancedPlayer(String name, int health, String weapon) {
         this.name = name;
 
         if(health > 0 && health <= 200)
-            this.health = health;
+            this.hitpoints = health;
 
         this.weapon = weapon;
     }
 
     public void loseHealth(int damage) {
-        this.health -= damage;
-        if (this.health <=0 ) {
+        this.hitpoints -= damage;
+        if (this.hitpoints <=0 ) {
             System.out.println("Player knocked out");
         }
     }
 
     public int getHealth() {
-        return health;
+        return hitpoints;
     }
 }
